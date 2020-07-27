@@ -1,17 +1,28 @@
 {
   "name": "RollingCircles",
   "version": "1.0.0",
-  "description": "This is a website for Le Chocolat",
+  "description": "This is a website for Rolling Circles",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin bikes.html -d dist --htmlmin -o dist/bikes.html && usemin bikes2.html -d dist --htmlmin -o dist/bikes2.html && usemin bikes3.html -d dist --htmlmin -o dist/bikes3.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin bookaTour.html -d dist --htmlmin -o dist/bookaTour.html && usemin bookaTour2.html -d dist --htmlmin -o dist/bookaTour2.html && usemin logIn.html -d dist --htmlmin -o dist/logIn.html && usemin repair.html -d dist --htmlmin -o dist/repair.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.2.2",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
