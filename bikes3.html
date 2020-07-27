@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Rolling Circles</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarclass="navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Rolling Circles</a>
+            <input id="logo" type="image" src="images/logo.png" height="60" width="60">
+            <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Bikes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Repair.html">Repair</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Book a tour.html">Book a tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="./logIn.html">Log In</a>
+                        </div>
+                    </li>
+                </ul>
+                <!--  <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="heading-section">
+            <h2>Product Details</h2>
+        </div>
+        <div class="row">
+            <div class="item">
+                <img src="images/topSellers1.2.jpg">
+            </div>
+ <div class="col-md-4 sm-4">
+                <div class="product-dtl">
+                    <div class="product-info">
+                        <div class="product-name">Variable Product</div>
+                        <div class="reviews-counter">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" checked />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" checked />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" checked />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                            <span>3 Reviews</span>
+                        </div>
+                        <div class="product-price-discount"><span>$2.000</span></div>
+                    </div>
+                    <p>Rondo Hurt CF2 (2020)</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="size">Size</label>
+                            <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="color">Color</label>
+                            <select id="color" name="color" class="form-control">
+                                <option>Blue</option>
+                                <option>Green</option>
+                                <option>Red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-count">
+                        <label for="size">Quantity</label>
+                        <form action="#" class="display-flex">
+                            <div class="qtyminus">-</div>
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-info-tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                        aria-controls="description" aria-selected="true">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab"
+                        aria-controls="review" aria-selected="false">Reviews (0)</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel"
+                    aria-labelledby="description-tab">
+                    With its HVRT, the Polish bike manufacturer is expanding the range to include an aerodynamically
+                    optimised racing bike.
+
+                    As with the Gravel models, Rondo uses the specially developed fork with the revolutionary TwinTip
+                    technology. This allows the wheel to be fitted at the front, in the two positions LO and HI. In the
+                    lower position the HVRT should be a comfortable training bike due to the more comfortable seating
+                    position. In addition, 650b tyres with a width of up to 47 mm can be driven in this setting. If you
+                    choose 700C tyres in the LO position, there is enough room to fit mudguards.In the HI setting, the
+                    HVRT should display its race genes and be more aggressive and agile with the more race-heavy seating
+                    position. A dream of a bike!
+                </div>
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    <div class="review-heading">REVIEWS</div>
+                    <p class="mb-20">There are no reviews yet.</p>
+                    <form class="review-form">
+                        <div class="form-group">
+                            <label>Your rating</label>
+                            <div class="reviews-counter">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Your message</label>
+                            <textarea class="form-control" rows="10"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Name*"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Email Id*">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="round-black-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<footer class="footer">
+        <br>
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="content">
+                            <form>
+                                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                    <span class="input-group-btn">
+                                        <button class="btn" type="submit" id="submit" onclick="myFunction()">Subscribe
+                                            Now</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <div class="row">
+            <div class="col-md-3  ">
+                <div class="cyc-sectionheader">
+                    <h4> <b>Services</b></h4>
+                </div>
+                <div class="Contact"><a href="./Contact.html" title="contact">
+                        <p>Contact</p>
+                    </a></div>
+                <div class="Returns"><a href="#" title="Returns">
+                        <p>Returns</p>
+                    </a></div>
+                <div class="Shipping & Delivery"><a href="#" title="Shipping & Delivery">
+                        <p>Shipping &amp; Delivery</p>
+                    </a></div>
+                <div class="Privacy"><a href="#" title="Privacy">
+                        <p>Privacy</p>
+                    </a></div>
+                <div class="Terms & Conditions"><a href="#" title="Terms &amp; Conditions">
+                        <p>Terms &amp; Conditions</p>
+                    </a></div>
+            </div>
+            <div class="col-md-3  ">
+                <div class="Guides and Reviews">
+                    <h4><b>Guides &amp; Reviews</b></h4>
+                </div>
+                <div class="Size Guides"> <a href="#" title="Bike Size Guide">
+                        Bike Size Guide
+                    </a></div>
+                <div class="typo-link-plugin"><a href="./bikes.html" title="Product of the Month">
+                        Product of the Month
+                    </a></div>
+                <div class="typo-link-plugin"><a href="./Repair.html" title="Bike Computer Guide">
+                        Repairs
+                    </a></div>
+            </div>
+            <div class="col-md-3  ">
+                <div class="cyc-sectionheader">
+                    <h4><b> Bikester </b></h4>
+                </div>
+                <div class="typo-link-plugin"><a href="./aboutus.html" title="About Us">
+                        About Us
+                    </a></div>
+                <div class="typo-link-plugin"><a href="#" title="Newsletter">
+                        Newsletter
+                    </a></div>
+            </div>
+        </div>
+
+
+        <div class="col-auto" style="text-align:center">
+            <h4 class="widget-title">Follow us</h4>
+            <ul class="social-nav">
+                <li><a href="https://twitter.com/login?lang=el" target="_blank" title="Twitter" rel="nofollow"
+                        class="twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/" target="_blank" title="Facebook" rel="nofollow"
+                        class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://plus.google.com/" target="_blank" title="Google plus" rel="nofollow"
+                        class="google"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.linkedin.com/home" target="_blank" title="Linkedin" rel="nofollow"
+                        class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://gr.pinterest.com/" target="_blank" title="Pinterest" rel="nofollow"
+                        class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p> &copy; Copyright 2018 Rolling Circles</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/tether/dist/js/tether.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>

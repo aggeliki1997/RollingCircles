@@ -26,3 +26,5 @@ function myFunction() {
     document.getElementById("submitForm").innerHTML = txt;
 
 } 
+
+ 
